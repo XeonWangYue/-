@@ -14,7 +14,6 @@
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -24,9 +23,6 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QGridLayout *gridLayout;
-    QWidget *widget;
-    QGridLayout *gridLayout_2;
-    QPushButton *pbBack;
     QMenuBar *menubar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -51,18 +47,6 @@ public:
         centralwidget->setAutoFillBackground(true);
         gridLayout = new QGridLayout(centralwidget);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        widget = new QWidget(centralwidget);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        gridLayout_2 = new QGridLayout(widget);
-        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-
-        gridLayout->addWidget(widget, 1, 0, 1, 1);
-
-        pbBack = new QPushButton(centralwidget);
-        pbBack->setObjectName(QString::fromUtf8("pbBack"));
-
-        gridLayout->addWidget(pbBack, 0, 0, 1, 1);
-
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -77,7 +61,6 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        pbBack->setText(QApplication::translate("MainWindow", "\350\277\224\345\233\236", nullptr));
     } // retranslateUi
 
 };

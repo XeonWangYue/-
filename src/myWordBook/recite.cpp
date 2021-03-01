@@ -13,7 +13,7 @@ Recite::~Recite()
     delete ui;
 }
 
-void Recite::on_pbReciteBack_clicked()
+void Recite::on_pushButton_clicked()
 {
 
 }

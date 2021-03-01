@@ -25,6 +25,7 @@ class Ui_Recite
 public:
     QGridLayout *gridLayout;
     QVBoxLayout *verticalLayout;
+    QPushButton *pushButton;
     QLabel *label;
     QVBoxLayout *verticalLayout_2;
     QLabel *label_2;
@@ -44,6 +45,11 @@ public:
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        pushButton = new QPushButton(Recite);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+
+        verticalLayout->addWidget(pushButton);
+
         label = new QLabel(Recite);
         label->setObjectName(QString::fromUtf8("label"));
         QFont font;
@@ -106,9 +112,9 @@ public:
 
         verticalLayout->addLayout(horizontalLayout);
 
-        verticalLayout->setStretch(0, 2);
-        verticalLayout->setStretch(1, 6);
-        verticalLayout->setStretch(2, 2);
+        verticalLayout->setStretch(1, 2);
+        verticalLayout->setStretch(2, 6);
+        verticalLayout->setStretch(3, 2);
 
         gridLayout->addLayout(verticalLayout, 0, 0, 1, 1);
 
@@ -121,6 +127,7 @@ public:
     void retranslateUi(QWidget *Recite)
     {
         Recite->setWindowTitle(QApplication::translate("Recite", "Form", nullptr));
+        pushButton->setText(QApplication::translate("Recite", "PushButton", nullptr));
         label->setText(QApplication::translate("Recite", "abandon", nullptr));
         label_2->setText(QApplication::translate("Recite", "TextLabeldfasd\n"
 "dfas\n"

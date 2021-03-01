@@ -14,9 +14,8 @@ class Recite : public QWidget
 public:
     explicit Recite(QWidget *parent = nullptr);
     ~Recite();
-
 private slots:
-    void on_pbReciteBack_clicked();
+    void on_pushButton_clicked();
 
 private:
     Ui::Recite *ui;

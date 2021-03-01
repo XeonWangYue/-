@@ -26,8 +26,44 @@
    <string>Form</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0">
-    <layout class="QVBoxLayout" name="verticalLayout" stretch="2,6,2">
+   <item row="1" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,2,6,2">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>back</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
      <item>
       <widget class="QLabel" name="label">
        <property name="font">

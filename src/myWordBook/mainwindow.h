@@ -16,21 +16,6 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
-private slots:
-    void on_pbReciteWord_clicked();
-public slots:
-    //主窗口隐藏与显示
-    void hideMainWindow();
-    void showMainWindow();
-    //Recite窗口隐藏与显示
-    void hideRecite();
-    void showRecite();
-signals:
-    void doHideMainWindow();
-    void doShowMainWindow();
-    void doHideRecite();
-    void doShowRecite();
 private:
     Recite* recite;
     MyMain* mymain;

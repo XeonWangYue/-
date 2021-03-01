@@ -56,20 +56,7 @@
    <property name="autoFillBackground">
     <bool>true</bool>
    </property>
-   <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
-     <widget class="QWidget" name="widget" native="true">
-      <layout class="QGridLayout" name="gridLayout_2"/>
-     </widget>
-    </item>
-    <item row="0" column="0">
-     <widget class="QPushButton" name="pbBack">
-      <property name="text">
-       <string>返回</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
+   <layout class="QGridLayout" name="gridLayout"/>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
